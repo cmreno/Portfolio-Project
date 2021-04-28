@@ -1,0 +1,97 @@
+.shop {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  h1 {
+    padding-top: 20px;
+    color: $purple;
+    font-family: Love;
+    font-size: 150px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 240px;
+    .text {
+      font-family: Comforta;
+      font-size: 55px;
+      color: $purple;
+      text-align: center;
+      min-width: 600px;
+    }
+    .image {
+      min-height: 500px;
+      min-width: 500px;
+    }
+    .img7 {
+      background-image: url(../images/chocolate.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: solid $purple 6px;
+      border-radius: 300px;
+    }
+    .img8 {
+      background-image: url(../images/wedding-main.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center right -50px;
+      border: solid $purple 6px;
+      border-radius: 300px;
+    }
+    .img9 {
+      background-image: url(../images/wedding1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      border: solid $purple 6px;
+      border-radius: 300px;
+    }
+    .img10 {
+      background-image: url(../images/cupcakes.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: solid $purple 6px;
+      border-radius: 300px;
+    }
+    .img11 {
+      background-image: url(../images/wedding2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top -50px;
+      border: solid $purple 6px;
+      border-radius: 300px;
+    }
+    .img12 {
+      background-image: url(../images/double-tier.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: solid $purple 6px;
+      border-radius: 300px;
+    }
+  }
+  .btn {
+    max-width: 600px;
+    height: 80px;
+    background-color: $purple;
+    color: white;
+    font-family: Comforta;
+    font-size: 40px;
+    border-radius: 50px;
+    padding: 15px 200px;
+    a {
+      text-decoration: none;
+      color: white;
+      font-family: Comforta;
+      font-size: 40px;
+    }
+  }
+}

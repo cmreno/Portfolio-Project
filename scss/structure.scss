@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $pink;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Love;
+  src: url(../fonts/LoveYaLikeASister-Regular.ttf);
+}
+@font-face {
+  font-family: Comforta;
+  src: url(../fonts/Comfortaa-Regular.ttf);
+}
+@font-face {
+  font-family: Poiret;
+  src: url(../fonts/PoiretOne-Regular.ttf);
+}

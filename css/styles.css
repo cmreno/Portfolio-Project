@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #dab8de;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Love;
+  src: url(../fonts/LoveYaLikeASister-Regular.ttf);
+}
+@font-face {
+  font-family: Comforta;
+  src: url(../fonts/Comfortaa-Regular.ttf);
+}
+@font-face {
+  font-family: Poiret;
+  src: url(../fonts/PoiretOne-Regular.ttf);
+}
+header {
+  width: 100%;
+  height: 68px;
+  background-color: #957199;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  background-image: url(../images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65px;
+  width: 65px;
+}
+header .sites {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .sites div.pipe {
+  height: 50%;
+  width: 1px;
+  background-color: white;
+}
+header .sites div a {
+  text-decoration: none;
+  color: white;
+  font-family: Poiret;
+  font-size: 40px;
+  padding: 0px 25px;
+}
+
+footer {
+  width: 100%;
+  height: 142px;
+  background-color: #957199;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .author {
+  color: white;
+  font-family: Poiret;
+  font-size: 18px;
+}
+footer .address {
+  color: white;
+  font-family: Poiret;
+  font-size: 18px;
+  text-align: center;
+}
+footer .address h4,
+footer .address p {
+  margin-bottom: 5px;
+}
+footer .socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .socials .fb {
+  background-image: url(../images/facebook-13.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+footer .socials .insta {
+  background-image: url(../images/instagram-13.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+footer .socials .twit {
+  background-image: url(../images/twitter-13.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.hero {
+  min-height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #95719950, #95719950), url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.hero .title1 {
+  color: white;
+  font-family: Love;
+  font-size: 200px;
+  position: absolute;
+  left: 350px;
+  top: 130px;
+}
+.hero .title2 {
+  color: white;
+  font-family: Love;
+  font-size: 200px;
+  position: absolute;
+  left: 800px;
+  top: 300px;
+}
+.hero .circ-promos {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 600px;
+  padding-bottom: 20px;
+}
+.hero .circ-promos .promos {
+  height: 240px;
+  margin: 0px 10px;
+}
+.hero .circ-promos .img1 {
+  background-image: url(../images/cupcakes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 240px;
+  border: solid #957199 6px;
+  border-radius: 150px;
+}
+.hero .circ-promos .img2 {
+  background-image: url(../images/cookies.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 240px;
+  border: solid #957199 6px;
+  border-radius: 150px;
+}
+.hero .circ-promos .img3 {
+  background-image: url(../images/double-tier.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 240px;
+  border: solid #957199 6px;
+  border-radius: 150px;
+}
+.hero .circ-promos .img4 {
+  background-image: url(../images/samples.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 240px;
+  border: solid #957199 6px;
+  border-radius: 150px;
+}
+.hero .circ-promos .img5 {
+  background-image: url(../images/straw-dessert.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 240px;
+  border: solid #957199 6px;
+  border-radius: 150px;
+}
+
+@media only screen and (max-width: 1450px) {
+  .hero .title1 {
+    left: 50px;
+    top: 130px;
+  }
+  .hero .title2 {
+    left: 150px;
+    top: 350px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .hero .title1 {
+    left: 0px;
+  }
+  .hero .title2 {
+    left: 0px;
+  }
+  .hero .circ-promos {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.about {
+  min-height: 100%;
+}
+.about h1 {
+  padding-top: 62px;
+  color: #957199;
+  font-family: Love;
+  font-size: 150px;
+  text-align: center;
+}
+.about .about-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about .about-section .upper {
+  display: flex;
+  justify-content: space-around;
+}
+.about .about-section .upper .text {
+  max-width: 590px;
+  min-height: 590px;
+  font-family: Comforta;
+  font-size: 32px;
+  color: #957199;
+  text-align: center;
+  margin: 50px;
+}
+.about .about-section .upper .image {
+  max-width: 590px;
+  height: 590px;
+  margin: 0px 50px;
+}
+.about .about-section .upper .img6 {
+  background-image: url(../images/betty.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid #957199 6px;
+  border-radius: 250px;
+  width: 590px;
+}
+.about .about-section .lower {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.about .about-section .lower .text {
+  max-width: 590px;
+  min-height: 590px;
+  font-family: Comforta;
+  font-size: 32px;
+  color: #957199;
+  text-align: center;
+  margin: 100px 50px;
+}
+.about .about-section .lower .image {
+  max-width: 590px;
+  height: 590px;
+  margin: 50px;
+}
+.about .about-section .lower .img7 {
+  background-image: url(../images/slice.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid #957199 6px;
+  border-radius: 250px;
+  width: 590px;
+}
+
+.shop {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.shop h1 {
+  padding-top: 20px;
+  color: #957199;
+  font-family: Love;
+  font-size: 150px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.shop .items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 240px;
+}
+.shop .items .text {
+  font-family: Comforta;
+  font-size: 55px;
+  color: #957199;
+  text-align: center;
+  min-width: 600px;
+}
+.shop .items .image {
+  min-height: 500px;
+  min-width: 500px;
+}
+.shop .items .img7 {
+  background-image: url(../images/chocolate.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid #957199 6px;
+  border-radius: 300px;
+}
+.shop .items .img8 {
+  background-image: url(../images/wedding-main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right -50px;
+  border: solid #957199 6px;
+  border-radius: 300px;
+}
+.shop .items .img9 {
+  background-image: url(../images/wedding1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  border: solid #957199 6px;
+  border-radius: 300px;
+}
+.shop .items .img10 {
+  background-image: url(../images/cupcakes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid #957199 6px;
+  border-radius: 300px;
+}
+.shop .items .img11 {
+  background-image: url(../images/wedding2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top -50px;
+  border: solid #957199 6px;
+  border-radius: 300px;
+}
+.shop .items .img12 {
+  background-image: url(../images/double-tier.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid #957199 6px;
+  border-radius: 300px;
+}
+.shop .btn {
+  max-width: 600px;
+  height: 80px;
+  background-color: #957199;
+  color: white;
+  font-family: Comforta;
+  font-size: 40px;
+  border-radius: 50px;
+  padding: 15px 200px;
+}
+.shop .btn a {
+  text-decoration: none;
+  color: white;
+  font-family: Comforta;
+  font-size: 40px;
+}
+
+h1 {
+  color: #957199;
+  font-family: Love;
+  font-size: 150px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact input {
+  width: 900px;
+  min-height: 76px;
+  border: solid #957199 6px;
+  border-radius: 50px;
+  font-family: Poiret;
+  font-size: 26px;
+  color: #957199;
+  margin-bottom: 60px;
+  padding: 0px 10px;
+}
+.contact textarea {
+  width: 900px;
+  height: 306px;
+  border: solid #957199 6px;
+  border-radius: 50px;
+  padding: 25px;
+  font-family: Poiret;
+  font-size: 26px;
+  color: #957199;
+  margin-bottom: 60px;
+}
+.contact .sub-btn {
+  max-width: 600px;
+  height: 80px;
+  background-color: #957199;
+  color: white;
+  font-family: Comforta;
+  font-size: 40px;
+  border-radius: 50px;
+  padding: 15px 200px;
+  margin-bottom: 70px;
+}

@@ -1,0 +1,112 @@
+.hero {
+  min-height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, $purple-o, $purple-o),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  .title1 {
+    color: white;
+    font-family: Love;
+    font-size: 200px;
+    position: absolute;
+    left: 350px;
+    top: 130px;
+  }
+  .title2 {
+    color: white;
+    font-family: Love;
+    font-size: 200px;
+    position: absolute;
+    left: 800px;
+    top: 300px;
+  }
+  .circ-promos {
+    // @include purp-border();
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 600px;
+    padding-bottom: 20px;
+    .promos {
+      height: 240px;
+      margin: 0px 10px;
+    }
+    .img1 {
+      background-image: url(../images/cupcakes.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 240px;
+      border: solid $purple 6px;
+      border-radius: 150px;
+    }
+    .img2 {
+      background-image: url(../images/cookies.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 240px;
+      border: solid $purple 6px;
+      border-radius: 150px;
+    }
+    .img3 {
+      background-image: url(../images/double-tier.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 240px;
+      border: solid $purple 6px;
+      border-radius: 150px;
+    }
+    .img4 {
+      background-image: url(../images/samples.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 240px;
+      border: solid $purple 6px;
+      border-radius: 150px;
+    }
+    .img5 {
+      background-image: url(../images/straw-dessert.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 240px;
+      border: solid $purple 6px;
+      border-radius: 150px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .hero {
+    .title1 {
+      left: 50px;
+      top: 130px;
+    }
+    .title2 {
+      left: 150px;
+      top: 350px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .hero {
+    .title1 {
+      left: 0px;
+    }
+    .title2 {
+      left: 0px;
+    }
+    .circ-promos {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+}
